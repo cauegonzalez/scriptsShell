@@ -1,0 +1,302 @@
+Ex.: 1
+# Crie um programa que escreva "Olá, Mundo!" na tela.
+print('Olá, Mundo!')
+
+
+=======
+
+
+Ex.: 2
+# Crie um programa que receba o nome da pessoa e dê uma mensagem de boas-vindas
+nome = input('Digite seu nome: ')
+
+print('Olá, {}! Seja muito bem-vindo'.format(nome))
+
+
+=======
+
+
+Ex.: 3
+# Crie um programa que receba dois números e mostre a soma entre eles
+a = float(input('Digite um número: '))
+b = float(input('Digite outro número: '))
+c = a + b
+print('A soma entre {} e {} é: {}!'.format(a, b, c))
+
+
+=======
+
+
+Ex.: 4
+# Crie um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informaçẽos possíveis sobre ele.
+var = input('Digite algo: ')
+print('O tipo primitivo de {} é: {}'.format(var, type(var)))
+print('{} só tem espaços? {}'.format(var, var.isspace()))
+print('{} é alfabético? {}'.format(var, var.isalpha()))
+print('{} é alfanumérico? {}'.format(var, var.isalnum()))
+print('{} está em maiúsculas? {}'.format(var, var.isupper()))
+print('{} está em minúsculas? {}'.format(var, var.islower()))
+print('{} está capitalizada? {}'.format(var, var.istitle()))
+
+
+=======
+
+
+Ex.: 5
+# Crie um programa que leia um número inteiro e mostre na tela seu antecessor e seu sucessor.
+num = int(input('Digite um número inteiro: '))
+prev = num - 1
+next = num + 1
+print('Analisando o número {}, seu antecessor é {} e seu sucessor é {}'.format(num, prev, next))
+
+
+=======
+
+
+Ex.: 6
+# Crie um programa que leia um número e mostre na tela seu dobro, triplo e raiz quadrada
+valor1 = int(input('Digite um valor: '))
+dobro  = valor1 * 2
+triplo = valor1 * 3
+raiz   = valor1 ** (1/2)
+
+print('O dobro de {} é: {}'.format(valor1, dobro))
+print('O triplo de {} é: {}'.format(valor1, triplo))
+print('A raiz quadrada de {} é: {}'.format(valor1, raiz))
+
+
+=======
+
+
+Ex.: 7
+# Crie um programa que leia duas notas de um aluno, calcule e mostre sua média
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+media = (nota1 + nota2) / 2
+
+print('As notas foram: {} e {}. A média é: {}'.format(nota1, nota2, media))
+
+
+=======
+
+
+Ex.: 8
+# Crie um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros
+valor = float(input('Digite a distância em metros: '))
+centimetros = valor * 100
+milímetros = valor * 1000
+
+print('A distância {} equivale a {} centímetros ou {} milímetros.'.format(valor, centimetros, milímetros))
+
+
+=======
+
+
+Ex.: 9
+# Crie um programa que leia um valor inteiro qualquer e mostre na tela sua tabuada
+valor = int(input('Digite um número inteiro: '))
+
+print('{} x 1  = {}'.format(valor, valor * 1))
+print('{} x 2  = {}'.format(valor, valor * 2))
+print('{} x 3  = {}'.format(valor, valor * 3))
+print('{} x 4  = {}'.format(valor, valor * 4))
+print('{} x 5  = {}'.format(valor, valor * 5))
+print('{} x 6  = {}'.format(valor, valor * 6))
+print('{} x 7  = {}'.format(valor, valor * 7))
+print('{} x 8  = {}'.format(valor, valor * 8))
+print('{} x 9  = {}'.format(valor, valor * 9))
+print('{} x 10 = {}'.format(valor, valor * 10))
+
+
+=======
+
+
+Ex.: 10
+# Crie um programa que leia quanto de dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar. Considerar US$1,00 = R$ 3,27
+valor = float(input('Digite quanto você possui na carteira: '))
+
+print('Com R$ {:.2f} é possível comprar US$ {:.2f} e sobram R$ {:.2f}'.format(valor, valor // 3.27, valor % 3.27))
+
+
+=======
+
+
+Ex.: 11
+# Crie um programa que leia a altura e largura de uma parede em metros, calcule sua área e a quantidade de tinta necessária para pintá-la,
+# sabendo que cada litro de tinta pinta uma área de 2m²
+largura = float(input('Digite a largura da parede: '))
+altura  = float(input('Digite a altura da parede: '))
+
+area = largura * altura
+litros = area / 2
+print('Sua parede tem {:.2f} m², então é necessário utilizar {:.2f} litros de tinta'.format(area, litros))
+
+
+=======
+
+
+Ex.: 12
+# Crie um programa que leia o preço de um produto e mostre seu novo preço com 5% de desconto
+preco = float(input('Digite o preço do produto: '))
+
+novoPreco = preco - (preco * (5 / 100))
+print('O produto está em promoção de: R$ {:.2f} por R$ {:.2f}.'.format(preco, novoPreco))
+
+
+=======
+
+
+Ex.: 13
+# Crie um programa que leia o salário de uma pessoa e mostre seu novo salário com 15% de aumento
+salario = float(input('Digite o salário atual: '))
+
+novoSalario = salario + (salario * (15 / 100))
+print('O seu salário era R$ {:.2f} e irá par R$ {:.2f}.'.format(salario, novoSalario))
+
+
+=======
+
+
+Ex.: 14
+# Crie um programa que leia uma temperatura em Celcius e converta para Farenheit
+temperaturaC = float(input('Digite a temperatura em ºC: '))
+temperaturaF = ((9 * temperaturaC) / 5) + 32
+
+print('A temperatura de {}ºC corresponde a {}ºF.'.format(temperaturaC, temperaturaF))
+
+
+=======
+
+
+Ex.: 15
+# Crie um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado.
+# Calcule o preço a pagar, sabendo que o carro custa R$ 60 por dia e R$ 0,15 por Km rodado
+distancia = float(input('Digite quantos Km foram rodados: '))
+dias = int(input('Digite a quantidade de dias em que o carro permaneceu alugado: '))
+
+valorPagar = 60 * dias + distancia * 0.15
+
+print('O valor total a ser pago pelo aluguel do carro é R$ {:.2f}'.format(valorPagar))
+
+
+=======
+
+
+Ex.: 16
+# Crie um programa que leia um número real qualquer pelo teclado e mostre na tela sua porção inteira
+import math
+real = float(input('Digite um número real: '))
+
+inteiro = math.trunc(real)
+inteiro2 = math.floor(real)
+
+print('O número {} tem a parte inteira {}'.format(real, inteiro))
+print('O número {} tem a parte inteira {}'.format(real, inteiro2))
+
+
+=======
+
+
+Ex.: 17
+# Crie um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa
+from math import hypot
+catetoAdjacente = float(input('Digite o tamanho do cateto adjacente: '))
+catetoOposto = float(input('Digite o tamanho do cateto oposto: '))
+
+hipotenusa = hypot(catetoAdjacente, catetoOposto)
+
+print('A hipotenusa do triângulo com lados {:.2f} e {:.2f} é {:.2f}'.format(catetoAdjacente, catetoOposto, hipotenusa))
+
+
+=======
+
+
+Ex.: 18
+# Crie um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo
+from math import radians, sin, cos, tan
+angulo = float(input('Digite o ângulo: '))
+
+# as funções que este programa executa exige que o parâmetro seja passado em radianos
+anguloRad = radians(angulo)
+
+seno = sin(anguloRad)
+cosseno = cos(anguloRad)
+tangente = tan(anguloRad)
+
+print('O ângulo {:.2f}º possui seno igual a {:.2f}.'.format(angulo, seno))
+print('O ângulo {:.2f}º possui cosseno igual a {:.2f}.'.format(angulo, cosseno))
+print('O ângulo {:.2f}º possui tangente igual a {:.2f}.'.format(angulo, tangente))
+
+
+=======
+
+
+Ex.: 19
+# Um professor quer sortear um dos seus quatro alunos para apagar o quadro.
+# Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido
+from random import choice
+aluno1 = 'Cauê'
+aluno2 = 'Malu'
+aluno3 = 'Raiani'
+aluno4 = 'Aline'
+
+listAlunos = [aluno1, aluno2, aluno3, aluno4]
+sorteado = choice(listAlunos)
+
+print('O aluno sorteado foi o {}.'.format(sorteado))
+
+
+=======
+
+
+Ex.: 20
+# Um professor quer sortear a ordem de apresentação de trabalhos dos alunos.
+# Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
+from random import sample
+aluno1 = 'Aline Gonzalez'
+aluno2 = 'Cauê Gonzalez'
+aluno3 = 'Malu Gonzalez'
+aluno4 = 'Raiani Gonzalez'
+
+listAlunos = [aluno1, aluno2, aluno3, aluno4]
+tamanho = len(listAlunos)
+ordem = sample(listAlunos, tamanho)
+
+# print('A ordem de apresentação é {}, {}, {}, {}.'.format(ordem[0], ordem[1], ordem[2], ordem[3]))
+print('A ordem de apresentação é {}.'.format(ordem))
+
+
+=======
+
+
+Ex.: 21
+# Escreva um programa em Python que abra e reproduza o audio de um arquivo mp3
+# importacao de modulo externo funcionou apenas no python 2. e sem aceitar caracteres especiais. nem nos comentarios
+import pygame
+pygame.init()
+file = 'ex021.mp3'
+
+pygame.mixer.music.load(file)
+pygame.mixer.music.play()
+pygame.event.wait()
+
+
+=======
+
+
+Ex.: 22
+#!/bin/bash
+
+rm ./exercicios.txt;
+LIST_ARQ=$(ls --hide=*.mp3 | grep -v ^d);
+i=1;
+
+for arquivo in $LIST_ARQ
+do
+    if [ $arquivo != 'exercicios.txt' ]; then
+        echo "Ex.: $i" >> ./exercicios.txt;
+        cat $arquivo >> ./exercicios.txt;
+        echo "\n\n=======\n\n" >> ./exercicios.txt;
+        i=$((i+1))
+    fi
+done
